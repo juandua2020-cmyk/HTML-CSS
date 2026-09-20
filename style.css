@@ -1,15 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    background-color: blanchedalmond;
+    background: linear-gradient(to bottom, blanchedalmond, white);
 }
 
 
 .container {
     display: grid;
-    width: 1200px;
-    margin:auto;
-    background-color:blanchedalmond;
+    width: 90%;          
+    max-width: 1200px;   
+    margin: auto;
+    background-color: blanchedalmond;
     text-align: center;
-    max-width: 1200px;
 }
 
 .header {
@@ -40,7 +46,7 @@ body{
 
 .hero {
     height: 200px;
-    background-image: url(hero.jpg);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(hero.jpg);
     background-size: cover;
     background-position: center;
     border-bottom: 3px solid brown;
@@ -53,16 +59,49 @@ body{
     padding: 2px;
     margin-top: 20px;
 }
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .judul {
+        font-size: 28px;
+    }
+
+    .hero {
+        height: 120px;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}
+
 .card {
     background-color: white;
     border: 1px solid brown;
     padding: 20px;
     text-align: center;
-    transition: 0.3s;   /* ini udah ada, bagus */
+    transition: 0.3s;   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
     background-color: lightblue;
+    transform: translateY(-8px);
 }
 .card h2 {
     color: brown;
