@@ -1,28 +1,59 @@
-
-
-/*Style*/
 body{
-    font: 16px/28px arial, sans-serif;
-    background-color: bisque;
+    background-color: blanchedalmond;
 }
 
 
-.container  {
+.container {
+    display: grid;
     width: 800px;
-    margin:auto;
-    background-color: aliceblue;
-    display: flex;
+    margin:auto
+    background-color:white;
+    text-align: center;
 }
 
 .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
 }
 
-.header .judul {
-    font-size: 40px;
-    font-weight: bold;
+.header ul  {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 10px;
 }
 
-.header ul li {
-    display: flex;
+.header a{
+    text-decoration: none;
+    color: salmon;
+    padding: 3px;
 }
+
+.header a:hover {
+    background-color: lightskyblue;
+    color: white;
+     
+}
+
+.hero {
+    height: 200px;
+    background-image: url(hero.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom: 3px solid brown;
+    border-top: 3px solid salmon;
+}
+.content {
+    padding: 2px;
+    text-align: justify;
+}
+
+.header .judul {
+    color: brown;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: "Arial", sans-serif;
+}
+
