@@ -1,4 +1,28 @@
+
+
+/*Style*/
+body{
+    font: 16px/28px arial, sans-serif;
+    background-color: bisque;
+}
+
+
 .container  {
     width: 800px;
     margin:auto;
+    background-color: aliceblue;
+    display: flex;
+}
+
+.header {
+    padding: 20px;
+}
+
+.header .judul {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header ul li {
+    display: flex;
 }
